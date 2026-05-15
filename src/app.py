@@ -33,6 +33,30 @@ activities = {
         "max_participants": 20,
         "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
     },
+    "Soccer Training": {
+        "description": "Improve ball control, teamwork, and game strategy",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 18,
+        "participants": ["alex@mergington.edu"]
+    },
+    "Basketball Club": {
+        "description": "Practice shooting, defense, and court awareness",
+        "schedule": "Wednesdays and Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 16,
+        "participants": ["maya@mergington.edu"]
+    },
+    "Guitar Ensemble": {
+        "description": "Play songs together and develop ensemble performance skills",
+        "schedule": "Mondays, 4:00 PM - 5:00 PM",
+        "max_participants": 12,
+        "participants": ["luke@mergington.edu"]
+    },
+    "Acoustic Guitar Workshop": {
+        "description": "Learn acoustic guitar techniques, fingerpicking, and song arrangement",
+        "schedule": "Thursdays, 3:30 PM - 4:30 PM",
+        "max_participants": 10,
+        "participants": ["sophia@mergington.edu"]
+    },
     "Gym Class": {
         "description": "Physical education and sports activities",
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",

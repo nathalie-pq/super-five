@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
+  let lastSignedUpActivity = null;
 
   // Function to fetch activities from API
   async function fetchActivities() {
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
           </div>
         `;
+        activityCard.classList.toggle("subscribed", name === lastSignedUpActivity);
 
         activitiesList.appendChild(activityCard);
 
@@ -144,7 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.textContent = result.message;
         messageDiv.className = "success";
         signupForm.reset();
-        fetchActivities(); // Refresh activities to show the new participant
+        lastSignedUpActivity = activity;
+        fetchActivities();
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
